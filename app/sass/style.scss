@@ -1,0 +1,27 @@
+﻿
+@import "fonts.scss";
+
+// $navColor: #505050;
+// $sharesColor: #de0124;
+// $sharesHoverColor: #f82b4a;
+// $basketBgColor: #1a62ac;
+// $navHoverColor: #006fc1;
+// $linksColor: #0061aa;
+// $bgCotalogSlideControl: #1962ac;
+// $visitedLink: #ae0c26;
+// $buttonHover: #006ec1;
+// $text: #6f6f6f;
+
+.search input::-webkit-input-placeholder {color:#8e8e97; font-size: 12px; font-style: italic; border: none;	outline: none;}
+.search input::-moz-placeholder          {color:#8e8e97; font-size: 12px; font-style: italic; border: none;	outline: none;}/* Firefox 19+ */
+.search input:-moz-placeholder           {color:#8e8e97; font-size: 12px; font-style: italic; border: none;	outline: none;}/* Firefox 18- */
+.search input:-ms-input-placeholder      {color:#8e8e97; font-size: 12px; font-style: italic; border: none;	outline: none;}
+
+body {
+	background: #fff;
+	font: 15px/1.2 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0 auto;
+	color: #212121;
+}
+
