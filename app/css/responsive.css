@@ -1,72 +1,7 @@
-@charset "UTF-8";
-@media only screen and (max-width: 1200px) { #main .colorset .color { margin: 12px 5.3px 0; }
-  #main .content .popular_totar .box_tovar { margin: 0 13px 20px 0; }
-  #main .content .popular_totar .box_tovar .toBasket .buttonToBasket { padding: 9px 22px; } }
-
-@media only screen and (max-width: 992px) { #header .mainmenu tr td.basketlink { width: 70px; }
-  #main .colorset .color { margin: 12px 2.4px 0; }
-  #main .content .popular_totar .box_tovar { width: 48%; margin: 0 18px 20px 0; }
-  #main .content .popular_totar .box_tovar:nth-child(3n+1) { margin: 0 18px 20px 0; }
-  #main .content .popular_totar .box_tovar:nth-child(2n+1) { margin: 0 0 20px 0; }
-  #footer .flogo img { margin: 0 0 25px; }
-  #footer .fphones { text-align: center; }
-  #footer .fphones a.callback { margin: 0; }
-  #footer .desctop_none.xs_block { display: block; margin: 20px 0 0; }
-  #footer .xs_none { display: none; } }
-
-@media only screen and (max-width: 768px) { #header .logo_phone .logo { text-align: center; }
-  #header .logo_phone .logo a { margin: 0 0 15px; }
-  #header .logo_phone .logo a img { max-width: 380px; }
-  #header .logo_phone .phones { text-align: center; padding: 0 10px; }
-  #header .logo_phone .phones a.phone { display: inline-block; margin: 0 5px 0 0; }
-  #header .logo_phone .phones a.phone.last { margin: 0; }
-  div.basketlink .dropdown-menu { min-width: 318px; }
-  div.basketlink .dropdown-menu .tovar_basket { padding: 20px 19px 10px; }
-  div.basketlink .dropdown-menu .tovar_basket img { margin: 0 15px 0 0; }
-  div.basketlink .dropdown-menu .tovar_basket .del_tovar { right: 15px; top: 25px; } }
-
-@media only screen and (min-width: 768px) { .navbar-collapse.collapse { display: none !important; } }
-
-@media only screen and (max-width: 767px) { #main .slider .padding { margin-top: 0; }
-  #main .slider .padding .item .slider-content .slidedesc { max-width: 340px; }
-  /* -----------меню display: none;----------*/
-  #header { /*  начало убераем верхнее меню + добавляем выподающие меню*/ /* конец убераем верхнее меню + добавляем выподающие меню*/ }
-  #header .mainmenu { display: none; }
-  #header .topm .toplink.hidden_mobile { display: none; }
-  #header .topm .mobile_menu { display: block; }
-  /* ----------------- меню -----------------*/
-  #main .content { width: 100%; }
-  #footer { padding: 0px 0 55px; }
-  #footer .margin_top { margin-top: 40px; }
-  #footer .flogo { margin: 30px 0 0; }
-  #footer .flogo img { margin: 0 auto; }
-  #footer .fphones { margin: 30px 0 0; text-align: center; }
-  #footer .fphones a.callback { margin: 0; }
-  #footer .sm_none { display: none; }
-  #footer .sm_block { display: block; }
-  #footer .desctop_none.xs_block { margin: 0; } }
-
-@media only screen and (max-width: 600px) { #main .slider .padding .item { background-position: 70% center; }
-  #main .slider .padding .item .slider-content { margin-top: 447px; }
-  #main .slider .padding .item .slider-content .slidedesc { max-width: 100%; float: left; }
-  #main .slider .padding .item .slider-content .slidedesc .background { float: left; background: #5e5f60; }
-  #main .slider .padding .item .slider-content .slidedesc .slidedetails { display: none; }
-  #main .slider .padding .item .slider-content .slidedesc .slidedetails.visible_mobile { display: block; margin: 0 0 0 66px; }
-  #main .slider .padding .item .table { display: block; overflow: hidden; }
-  #main .slider .padding .item .navigation_slider { width: auto; float: left; display: block; margin: 0 0 -33px; position: relative; z-index: 99999; width: 66px; }
-  #main .slider .padding .item .container { padding: 0; }
-  #main .slider .padding .owl-prev, #main .slider .padding .owl-next { width: 33px; height: 33px; }
-  #main .slider .padding .owl-prev { background: #df0124 url(../img/slide_prev.png) no-repeat 50% 50%; }
-  #main .slider .padding .owl-next { background: #df0124 url(../img/slide_next.png) no-repeat 50% 50%; }
-  #main .slider .padding .owl-carousel .owl-stage-outer { padding-bottom: 195px; } }
-
-@media only screen and (max-width: 500px) { #main .content .popular_totar .box_tovar { width: 100%; margin: 0 0px 20px 0; }
-  #main .content .popular_totar .box_tovar:nth-child(3n+1) { margin: 0 0px 20px 0; }
-  #main .content .popular_totar .box_tovar:nth-child(2n+1) { margin: 0 0 20px 0; }
-  #main .content .news.mobile_block { display: block; }
-  #main .slider .padding .item .slider-content .slidedesc .background h2 { font-size: 30px; } }
-
-@media only screen and (max-width: 370px) { #header .mobile_padding { padding: 0; }
-  #header .logo_phone .phones a.phone { letter-spacing: -1px; } }
+@media only screen and (max-width: 980px) { #header .header_top, #header .footer_top, #footer .header_top, #footer .footer_top { padding: 0 30px; }
+  #header .header_bottom, #header .footer_bottom, #footer .header_bottom, #footer .footer_bottom { padding: 28px 30px 23px; }
+  #main .wrapper_slider .bg { padding: 0 15px; }
+  #header .header_top .wrapper_nav .nav, #header .footer_top .wrapper_nav .nav, #footer .header_top .wrapper_nav .nav, #footer .footer_top .wrapper_nav .nav { display: none; }
+  #header .header_top .wrapper_nav .mob-menu, #header .footer_top .wrapper_nav .mob-menu, #footer .header_top .wrapper_nav .mob-menu, #footer .footer_top .wrapper_nav .mob-menu { display: block; } }
 
 /*# sourceMappingURL=../maps/responsive.css.map */

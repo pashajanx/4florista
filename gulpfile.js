@@ -17,7 +17,7 @@ gulp.task('sass', function(){ // Создаем таск Sass
 		.pipe(sourcemaps.init())
 		.pipe(sass({outputStyle: 'compact'})) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer({
-	      browsers: ['last 25 versions', 'ie 9'],
+	      browsers: ['last 25 versions', '> 1%', 'ie 9'],
 	      cascade: false
 	    }))
 	    .pipe(sourcemaps.write('../maps'))

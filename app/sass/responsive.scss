@@ -1,299 +1,33 @@
-﻿@media only screen and (max-width: 1200px) {
- 		#main {
-		.colorset {
-			.color {
-				margin: 12px 5.3px 0;
-			} 
-		}
-		.content {
-			.popular_totar {
-				.box_tovar {
-					margin: 0 13px 20px 0;
-					.toBasket {
-						.buttonToBasket {
-							padding: 9px 22px;
-						}
-					}
-				}
-			}
-		}
-	} 
- } 
-@media only screen and (max-width: 992px) {
-	#header {
-		.mainmenu {
-			tr {
-				td.basketlink {
-					width: 70px;
-				}
-			}
-		}
+﻿@media only screen and (max-width: 980px) {
+	#header .header_top, 
+	#header .footer_top,
+	#footer .header_top, 
+	#footer .footer_top {
+		padding: 0 30px;
+	}
+	#header .header_bottom, 
+	#header .footer_bottom, 
+	#footer .header_bottom, 
+	#footer .footer_bottom {
+		padding: 28px 30px 23px;
 	}
 	#main {
-		.colorset {
-			.color {
-				margin: 12px 2.4px 0;
-			} 
-		}
-		.content {
-			.popular_totar {
-				.box_tovar {
-					width: 48%;
-					margin: 0 18px 20px 0;
-					&:nth-child(3n+1) {
-						margin: 0 18px 20px 0;
-					}
-					&:nth-child(2n+1) {
-						margin: 0 0 20px 0;
-					}
-				}
+		.wrapper_slider {
+			.bg {
+				padding: 0 15px;
 			}
 		}
 	}
-	#footer {
-		.flogo {
-			img {
-				margin: 0 0 25px;
-			}
-		}
-		.fphones {
-			text-align: center;
-			a.callback {
-				margin: 0;
-			}
-		}
-		.desctop_none.xs_block {
-			display: block;
-			margin: 20px 0 0;
-		}
-		.xs_none {
-			display: none;
-		}
+	#header .header_top .wrapper_nav .nav, 
+	#header .footer_top .wrapper_nav .nav, 
+	#footer .header_top .wrapper_nav .nav, 
+	#footer .footer_top .wrapper_nav .nav {
+		display: none;
 	}
-} 
-@media only screen and (max-width: 768px) {
-	#header {
-		.logo_phone {
-			.logo {
-				text-align: center;
-				a {
-					margin: 0 0 15px;
-					img {
-						max-width: 380px;
-					}
-				}
-			}
-			.phones {
-				text-align: center;
-				padding: 0 10px;
-				a.phone {
-					display: inline-block;
-					margin: 0 5px 0 0;
-				}
-				a.phone.last {
-					margin: 0;
-				}
-			}
-		}
-	} 
-	div.basketlink {
-		.dropdown-menu {
-			min-width: 318px;
-			.tovar_basket {
-				padding: 20px 19px 10px;
-				img {
-					margin: 0 15px 0 0;
-				}
-				.del_tovar {
-					right: 15px;
-					top: 25px;
-				}
-			}
-		}
+	#header .header_top .wrapper_nav .mob-menu, 
+	#header .footer_top .wrapper_nav .mob-menu, 
+	#footer .header_top .wrapper_nav .mob-menu,
+	#footer .footer_top .wrapper_nav .mob-menu {
+		display: block;
 	}
-}
-@media only screen and (min-width: 768px) {
-	.navbar-collapse.collapse {
-		display: none !important;
-	}
-}
-@media only screen and (max-width: 767px) {
-	#main {
-		.slider {
-			.padding {
-				margin-top: 0; // убераем отступ с ПОД меню
-				.item {
-					.slider-content {
-						.slidedesc {
-							max-width: 340px;
-						}
-					}
-				}
-			}
-		}
-	}
-	/* -----------меню display: none;----------*/
-	#header {
-		.mainmenu {
-			display: none;
-		}
-		/*  начало убераем верхнее меню + добавляем выподающие меню*/
-		.topm {
-			.toplink.hidden_mobile {
-				display: none;
-			}
-			.mobile_menu {
-				display: block;
-			}
-		}
-		/* конец убераем верхнее меню + добавляем выподающие меню*/
-	}
-	/* ----------------- меню -----------------*/
-	#main {
-		.content {
-			width: 100%;
-		}
-	}
-	#footer {
-		padding: 0px 0 55px;
-		.margin_top {
-			margin-top: 40px;
-		}
-		.flogo {
-			margin: 30px 0 0;
-			img {
-				margin: 0 auto;
-			}
-		}
-		.fphones {
-			margin: 30px 0 0;
-			text-align: center;
-			a.callback {
-				margin: 0;
-			}
-		}
-		.sm_none {
-			display: none;
-		}
-		.sm_block {
-			display: block;
-		}
-		.desctop_none.xs_block {
-			margin: 0;
-		}
-		// .catalog_tovarov_mobile {
-		// 	margin-bottom: 30px;
-		// }
-	}
-}
-@media only screen and (max-width: 600px) {
-	#main {
-		.slider {
-			.padding {
-				.item {
-					background-position: 70% center;
-					.slider-content {
-						margin-top: 447px;
-						.slidedesc {
-							max-width: 100%;
-							float: left;
-							.background {
-								float: left;
-								background: #5e5f60;
-							}
-							.slidedetails {
-								display: none;
-							}
-							.slidedetails.visible_mobile {
-								display: block;
-								margin: 0 0 0 66px;
-							}
-						}
-					}
-					.table {
-						display: block;
-						overflow: hidden;
-					}
-					.navigation_slider {
-						width: auto;
-						float: left;
-						display: block;
-						margin: 0 0 -33px;
-						position: relative;
-						z-index: 99999;
-						width: 66px;
-					}
-					.container {
-						padding: 0;
-					}
-				}
-				.owl-prev, .owl-next {
-					width: 33px;
-					height: 33px;
-				}
-				.owl-prev {
-				    background: #df0124 url(../img/slide_prev.png) no-repeat 50% 50%;
-				}
-				.owl-next {
-				    background: #df0124 url(../img/slide_next.png) no-repeat 50% 50%;
-				}
-				.owl-carousel .owl-stage-outer {
-					padding-bottom: 195px;
-				}
-			}
-		}
-	}  
-
-}
-@media only screen and (max-width: 500px) {
-	#main {
-		.content {
-			.popular_totar {
-				.box_tovar {
-					width: 100%;
-					margin: 0 0px 20px 0;
-					&:nth-child(3n+1) {
-						margin: 0 0px 20px 0;
-					}
-					&:nth-child(2n+1) {
-						margin: 0 0 20px 0;
-					}
-				}
-			}
-			.news.mobile_block {
-				display: block;
-			}
-		}
-	}
-	#main {
-		.slider {
-			.padding {
-				.item {
-					.slider-content {
-						.slidedesc {
-							.background {
-								h2 {
-									font-size: 30px;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}  
-}
-@media only screen and (max-width: 370px) {
-	#header {
-		.mobile_padding {
-			padding: 0;
-		}
-		.logo_phone {
-			.phones {
-				a.phone {
-					letter-spacing: -1px;
-				}
-			}
-		}
-	}  
-}
+} 	
