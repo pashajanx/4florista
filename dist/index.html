@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>4florista</title>
 		 <link rel="shortcut icon" href="favicon.ico">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet">
-        
+		<link href="css/style.min.css" rel="stylesheet">
+		<link href="css/responsive.min.css" rel="stylesheet">
+        <script src="./js/jquery.min.js"></script>
 	</head>
 	<body>
 		<header id="header">
@@ -33,6 +33,13 @@
 						</ul>
 					</div>
 					<!-- end mobile menu -->
+					<script>
+						$(".toggle-mnu_1").click(function() {
+						  $(this).toggleClass("on");
+						  $(".main-mnu_1").slideToggle();
+						  return false;
+						});
+					</script>
 					<div class="login">
 						<a href="#">
 							<i class="login_icon"></i>
@@ -145,7 +152,7 @@
 			    </div>
 		    </div>
 		    <div class="looking">
-		    	<div class="wrapper_img_petals"><img src="img/petals.png" alt=""></div>
+		    	<div class="wrapper_img"><img src="img/petals.png" alt=""></div>
 		    	<h3>Что вы ищите?</h3>
 		    	<div class="wrapper_box">
 			    	<div class="box">
@@ -602,7 +609,6 @@
 				</div>
 			</div>
 		</footer>
-		<script src="./js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/slick.min.js"></script>
 		<script type="text/javascript">
 		    $(document).ready(function(){
@@ -637,13 +643,6 @@
 			});
 		    });
 		  </script>
-		  <script>
-						$(".toggle-mnu_1").click(function() {
-						  $(this).toggleClass("on");
-						  $(".main-mnu_1").slideToggle();
-						  return false;
-						});
-					</script>
 		  	<script>
 				$(".toggle-mnu_2").click(function() {
 				  $(this).toggleClass("on");

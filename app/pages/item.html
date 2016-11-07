@@ -10,7 +10,7 @@
 		<link href="css/responsive.css" rel="stylesheet">
         
 	</head>
-	<body>
+	<body class="item">
 		<header id="header">
 			<div class="header_top clearfix">
 				<div class="wrapper_nav clearfix">
@@ -33,6 +33,13 @@
 						</ul>
 					</div>
 					<!-- end mobile menu -->
+					<script>
+						$(".toggle-mnu_1").click(function() {
+						  $(this).toggleClass("on");
+						  $(".main-mnu_1").slideToggle();
+						  return false;
+						});
+					</script>
 					<div class="login">
 						<a href="#">
 							<i class="login_icon"></i>
@@ -88,62 +95,6 @@
 			</div>
 		</header>
 		<main id="main">
-		    <div class="wrapper_slider clearfix">
-		    	<div class="bg">
-			        <div class="slider">
-			            <div>
-			            	<div class="text">
-			            		<strong>Представляем Букет этой недели</strong>
-			            		<span>Красивый букет из 19-ти розовых роз по приятной цене – 1999 рублей!</span>
-			            		<a href="#" class="more">Узнать подробнее</a>
-			            	</div>
-			            	<div class="wrapper_img">
-			            		<img src="img/img_2_slider.png" alt="">
-			            	</div>
-			            </div>
-			            <div>
-			            	<div class="text">
-			            		<strong>Представляем Букет этой недели</strong>
-			            		<span>Красивый букет из 19-ти розовых роз по приятной цене – 1999 рублей!</span>
-			            		<a href="#" class="more">Узнать подробнее</a>
-			            	</div>
-			            	<div class="wrapper_img">
-			            		<img src="img/img_2_slider.png" alt="">
-			            	</div>
-			            </div>
-			            <div>
-			            	<div class="text">
-			            		<strong>Представляем Букет этой недели</strong>
-			            		<span>Красивый букет из 19-ти розовых роз по приятной цене – 1999 рублей!</span>
-			            		<a href="#" class="more">Узнать подробнее</a>
-			            	</div>
-			            	<div class="wrapper_img">
-			            		<img src="img/img_2_slider.png" alt="">
-			            	</div>
-			            </div>
-			            <div>
-			            	<div class="text">
-			            		<strong>Представляем Букет этой недели</strong>
-			            		<span>Красивый букет из 19-ти розовых роз по приятной цене – 1999 рублей!</span>
-			            		<a href="#" class="more">Узнать подробнее</a>
-			            	</div>
-			            	<div class="wrapper_img">
-			            		<img src="img/img_2_slider.png" alt="">
-			            	</div>
-			            </div>
-			            <div>
-			            	<div class="text">
-			            		<strong>Представляем Букет этой недели</strong>
-			            		<span>Красивый букет из 19-ти розовых роз по приятной цене – 1999 рублей!</span>
-			            		<a href="#" class="more">Узнать подробнее</a>
-			            	</div>
-			            	<div class="wrapper_img">
-			            		<img src="img/img_2_slider.png" alt="">
-			            	</div>
-			            </div>
-			        </div>
-			    </div>
-		    </div>
 		    <div class="looking">
 		    	<div class="wrapper_img_petals"><img src="img/petals.png" alt=""></div>
 		    	<h3>Что вы ищите?</h3>
@@ -211,9 +162,61 @@
 			    	</div>
 			    </div>
 		    </div>
-		   	<div class="best_prise">
-		   		<h3>Лучшая цена</h3>
+		   	<div class="tovar_block">
+		   		<h3>Букеты</h3>
 		   		<div class="wrapper_best_prise_box clearfix">
+		   			<div class="best_prise_box">
+			   			<div class="wrapper_img">
+			   				<img src="img/best_prise_box_1.jpg" alt="">
+			   			</div>
+			   			<span class="name_tovar">Весенняя корзинка</span>
+			   			<div class="prise">
+			   				<span class="new">1399 р.</span>
+			   				<span class="old">1900 р.</span>
+			   			</div>
+			   			<a href="#" class="buy">Купить</a>
+			   			<a href="#" class="buyToClick">Купить в 1 клик</a>
+			   			<div class="action">Акция</div>
+		   			</div>
+		   			<div class="best_prise_box">
+			   			<div class="wrapper_img">
+			   				<img src="img/best_prise_box_1.jpg" alt="">
+			   			</div>
+			   			<span class="name_tovar">Весенняя корзинка</span>
+			   			<div class="prise">
+			   				<span class="new">1399 р.</span>
+			   				<span class="old">1900 р.</span>
+			   			</div>
+			   			<a href="#" class="buy">Купить</a>
+			   			<a href="#" class="buyToClick">Купить в 1 клик</a>
+			   			<div class="action">Акция</div>
+		   			</div>
+		   			<div class="best_prise_box">
+			   			<div class="wrapper_img">
+			   				<img src="img/best_prise_box_1.jpg" alt="">
+			   			</div>
+			   			<span class="name_tovar">Весенняя корзинка</span>
+			   			<div class="prise">
+			   				<span class="new">1399 р.</span>
+			   				<span class="old">1900 р.</span>
+			   			</div>
+			   			<a href="#" class="buy">Купить</a>
+			   			<a href="#" class="buyToClick">Купить в 1 клик</a>
+			   			<div class="action">Акция</div>
+		   			</div>
+		   			<div class="best_prise_box">
+			   			<div class="wrapper_img">
+			   				<img src="img/best_prise_box_1.jpg" alt="">
+			   			</div>
+			   			<span class="name_tovar">Весенняя корзинка</span>
+			   			<div class="prise">
+			   				<span class="new">1399 р.</span>
+			   				<span class="old">1900 р.</span>
+			   			</div>
+			   			<a href="#" class="buy">Купить</a>
+			   			<a href="#" class="buyToClick">Купить в 1 клик</a>
+			   			<div class="action">Акция</div>
+		   			</div>
 		   			<div class="best_prise_box">
 		   				<a href="#" class="all_block">
 			   				<div class="wrapper_img">
@@ -225,7 +228,8 @@
 			   					<span class="old">1900 р.</span>
 			   				</div>
 			   				<span class="buy">Купить</span>
-			   				<div class="action">Акция</div>
+			   				<span class="buyToClick">Купить в 1 клик</span>
+			   				<div class="new_tovar">Новинка</div>
 			   			</a>
 		   			</div>
 		   			<div class="best_prise_box">
@@ -237,7 +241,8 @@
 			   					<span class="old">1900 р.</span>
 			   				</div>
 			   				<span class="buy">Купить</span>
-			   				<div class="action">Акция</div>
+			   				<span class="buyToClick">Купить в 1 клик</span>
+			   				<div class="new_tovar">Новинка</div>
 			   			</a>
 		   			</div>
 		   			<div class="best_prise_box">
@@ -249,7 +254,8 @@
 			   					<span class="old">1900 р.</span>
 			   				</div>
 			   				<span class="buy">Купить</span>
-			   				<div class="action">Акция</div>
+			   				<span class="buyToClick">Купить в 1 клик</span>
+			   				<div class="new_tovar">Новинка</div>
 			   			</a>
 		   			</div>
 		   			<div class="best_prise_box">
@@ -261,93 +267,9 @@
 			   					<span class="old">1900 р.</span>
 			   				</div>
 			   				<span class="buy">Купить</span>
-			   				<div class="action">Акция</div>
+			   				<span class="buyToClick">Купить в 1 клик</span>
+			   				<div class="new_tovar">Новинка</div>
 			   			</a>
-		   			</div>
-		   		</div>
-		   	</div>
-		   	<div class="popular_tovar">
-		   		<h3>Популярные товары</h3>
-		   		<div class="wrapper_popular_tovar_box clearfix">
-		   			<div class="popular_tovar_box">
-		   				<a href="#" class="all_block">
-			   				<div class="wrapper_img"><img src="img/popular_tovar_box_1.jpg" alt=""></div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-		   				</a>
-		   			</div>
-		   			<div class="popular_tovar_box">
-		   				<a href="#" class="all_block">
-		   				<div class="wrapper_img"><img src="img/popular_tovar_box_2.jpg" alt=""></div>
-		   				<span class="name_tovar">Весенняя корзинка</span>
-		   				<div class="prise">
-		   					<span class="new">1399 р.</span>
-		   				</div>
-		   				<span class="buy">Купить</span>
-		   				</a>
-		   			</div>
-		   			<div class="popular_tovar_box">
-		   				<a href="#" class="all_block">
-			   				<div class="wrapper_img"><img src="img/popular_tovar_box_3.jpg" alt=""></div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-		   				</a>
-		   			</div>
-		   			<div class="popular_tovar_box">
-		   				<a href="#" class="all_block">
-			   				<div class="wrapper_img"><img src="img/popular_tovar_box_4.jpg" alt=""></div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-		   				</a>
-		   			</div>
-		   			<div class="popular_tovar_box">
-		   				<a href="#" class="all_block">
-			   				<div class="wrapper_img"><img src="img/popular_tovar_box_1.jpg" alt=""></div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-		   				</a>
-		   			</div>
-		   			<div class="popular_tovar_box">
-		   				<a href="#" class="all_block">
-			   				<div class="wrapper_img"><img src="img/popular_tovar_box_2.jpg" alt=""></div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-		   				</a>
-		   			</div>
-		   			<div class="popular_tovar_box">
-		   				<a href="#" class="all_block">
-			   				<div class="wrapper_img"><img src="img/popular_tovar_box_3.jpg" alt=""></div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-		   				</a>
-		   			</div>
-		   			<div class="popular_tovar_box">
-		   				<a href="#" class="all_block">
-			   				<div class="wrapper_img"><img src="img/popular_tovar_box_4.jpg" alt=""></div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-		   				</a>
 		   			</div>
 		   		</div>
 		   	</div>
@@ -481,56 +403,6 @@
 					<a href="#" class="detals_prise">Узнать стоимость доставки</a>
 				</div>
 			</div>
-			<div class="wrapper_about_us">
-				<div class="bg">
-					<div class="about_us">
-						<h1>О нас</h1>
-						<div class="wrapper_about_us_box">
-							<p>Мы работаем для Вас!</p>
-							<h2>Самовывоз</h2>
-							<p>Салон флористики "Цветочная Мастерская 4florista" - это команда профессиональных флористов, по настоящему влюбленных в свое дело.</p>
-							<p>С 2005 года мы постоянно радуем наших клиентов свежими букетами и цветочными композициями. Благодаря огромному опыту работы, наши флористы с первых слов понимают любого клиента. Выслушиваем пожелания, подсказываем, что с нашей точки зрения, будет более интересным вариантом решения Вашей задумки.</p>
-							<h2>Самовывоз</h2>
-							<p>Многие из Вас знают нас, как талантливых декораторов. Одно из основных направлений нашей деятельности – оформление свадеб цветами</p>
-							<p>К каждому проекту, в не зависимости от его стоимости, мы стараемся подходить максимально индивидуально. Вкладывая частицу нашей души, чтобы создать атмосферу настоящего праздника.<br>
-							Среди оформленных проектов нашей мастерской – озеленение офисоф компаний и банков, свадебные торжества и выездные церемонии, огромное количество классических и бизнес букетов, флористических композиций. Декорирование помещение, драпировка тканями и оформлнение помещений шарами.</p>
-							<p>Отдельным пунктом в нашей работе стоит такая дата, как новый Год. Это, пожалуй, один из самых любимых наших праздников. Среди наших товаров и услуг: креативные новогодние ёлки, праздничное оформление офисов и корпоративных мероприятий, продуктовые корзины и огромное количество сувениров. Так же, в наших салонах, вы можете заказать подарочную упаковку Ваших подарков.</p>
-							<p>Мы считаем, что красота должна быть доступной! Ждем Вас в наших магазинах.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="contacnts">
-				<h3>КОнтакты</h3>
-				<div class="wrapper_contacnts_box">
-					<div class="contacnts_box">
-						<div class="phone">
-							<span class="head">Телефон:</span><br>
-							<a href="tel:+79255438178">+7 ( 925) 543-81-78</a>
-						</div>
-						<div class="address">
-							<span class="head">Адрес:</span><br>
-							<span class="street">Бауманская: ул. Малая Почтовая, д.2/2 стр.1</span>
-						</div>
-						<div class="map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.328979741825!2d37.683998315596064!3d55.77015798055796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5357d5243894f%3A0x14b0aa49ce34aa29!2z0JzQsNC70LDRjyDQn9C-0YfRgtC-0LLQsNGPINGD0LsuLCAyLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA1MDA1!5e0!3m2!1sru!2sua!4v1478350436186" height="390" style="border:0" allowfullscreen></iframe>
-						</div>
-					</div>
-					<div class="contacnts_box">
-						<div class="phone">
-							<span class="head">Телефон:</span><br>
-							<a href="tel:+79255438178">+7 ( 925) 543-81-78</a>
-						</div>
-						<div class="address">
-							<span class="head">Адрес:</span><br>
-							<span class="street">Бауманская: ул. Малая Почтовая, д.2/2 стр.1</span>
-						</div>
-						<div class="map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.328979741825!2d37.683998315596064!3d55.77015798055796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5357d5243894f%3A0x14b0aa49ce34aa29!2z0JzQsNC70LDRjyDQn9C-0YfRgtC-0LLQsNGPINGD0LsuLCAyLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA1MDA1!5e0!3m2!1sru!2sua!4v1478350436186" height="390" style="border:0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
 		</main>
 		<footer id="footer">
 			<div class="footer_top clearfix">
@@ -637,13 +509,13 @@
 			});
 		    });
 		  </script>
-		  <script>
-						$(".toggle-mnu_1").click(function() {
-						  $(this).toggleClass("on");
-						  $(".main-mnu_1").slideToggle();
-						  return false;
-						});
-					</script>
+		  	<script>
+				$(".toggle-mnu_1").click(function() {
+				  $(this).toggleClass("on");
+				  $(".main-mnu_1").slideToggle();
+				  return false;
+				});
+			</script>
 		  	<script>
 				$(".toggle-mnu_2").click(function() {
 				  $(this).toggleClass("on");
