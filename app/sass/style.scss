@@ -513,52 +513,9 @@ a {
 					overflow: hidden;
 					margin: 0 auto 15px;
 					line-height: 80px;
-					i {
+					img {
 						display: inline-block;
 						vertical-align: middle;
-					}
-					i.looking_box_1 {
-						width: 50px;
-						height: 100%;
-						margin: 15px 0 0;
-						background: url(../img/svg/looking_box_1.svg)no-repeat;
-					}
-					.looking_box_2 {
-						width: 70px;
-						height: 57px;
-						background: url(../img/svg/looking_box_2.svg)no-repeat;
-					}
-					.looking_box_3 {
-						width: 65px;
-						height: 63px;
-						margin: 0 0 5px;
-						background: url(../img/svg/looking_box_3.svg)no-repeat;
-					}
-					.looking_box_4 {
-						width: 51px;
-						height: 52px;
-						background: url(../img/svg/looking_box_4.svg)no-repeat;
-					}
-					.looking_box_5 {
-						width: 45px;
-						height: 100%;
-						margin: 20px 0 0;
-						background: url(../img/svg/looking_box_5.svg)no-repeat;
-					}
-					.looking_box_6 {
-						width: 40px;
-						height: 61px;
-						background: url(../img/svg/looking_box_6.svg)no-repeat;
-					}
-					.looking_box_7 {
-						width: 50px;
-						height: 52px;
-						background: url(../img/svg/looking_box_7.svg)no-repeat;
-					}
-					.looking_box_8 {
-						width: 41px;
-						height: 60px;
-						background: url(../img/svg/looking_box_8.svg)no-repeat;
 					}
 				}
 			}
@@ -726,29 +683,9 @@ a {
 						border-radius: 50%;
 						margin: 0 auto 20px;
 						transition: all 0.3s;
-						i {
+						img {
 							display: inline-block;
 							vertical-align: middle;
-						}
-						.guarantee_box_1 {
-							width: 92px;
-							height: 110px;
-							background: url(../img/svg/guarantee_box_1.svg) no-repeat;
-						}
-						.guarantee_box_2 {
-							width: 76px;
-							height: 110px;
-							background: url(../img/svg/guarantee_box_2.svg) no-repeat;
-						}
-						.guarantee_box_3 {
-							width: 90px;
-							height: 90px;
-							background: url(../img/svg/guarantee_box_3.svg) no-repeat;
-						}
-						.guarantee_box_4 {
-							width: 109px;
-							height: 110px;
-							background: url(../img/svg/guarantee_box_4.svg) no-repeat;
 						}
 					}
 				}
@@ -890,12 +827,9 @@ a {
 						border: 3px solid #f15c62;
 						transition: all .3s ease;
 					}
-					.payment_tovar_1 {
-						width: 127px;
-						height: 155px;
+					img {
 						vertical-align: bottom;
 						display: inline-block;
-						background: url(../img/svg/payment_tovar_1.svg)no-repeat;
 					}
 				}
 				p {
@@ -927,12 +861,9 @@ a {
 	            	border: 3px solid #f15c62;
 	            	transition: all .3s ease;
 	            }
-	            .delivery_tovar_1 {
-	                width: 137px;
-	                height: 165px;
+	            img {
 	                vertical-align: bottom;
 	                display: inline-block;
-	                background: url(../img/svg/delivery_tovar_1.svg) no-repeat;
 	            }
 	        }
         	p {

@@ -279,23 +279,7 @@ a { text-decoration: none; outline: none; }
 
 #main .looking .wrapper_box .box .circle { border: 2px solid #f5c4b3; -webkit-border-radius: 50%; border-radius: 50%; width: 85px; height: 85px; overflow: hidden; margin: 0 auto 15px; line-height: 80px; }
 
-#main .looking .wrapper_box .box .circle i { display: inline-block; vertical-align: middle; }
-
-#main .looking .wrapper_box .box .circle i.looking_box_1 { width: 50px; height: 100%; margin: 15px 0 0; background: url(../img/svg/looking_box_1.svg) no-repeat; }
-
-#main .looking .wrapper_box .box .circle .looking_box_2 { width: 70px; height: 57px; background: url(../img/svg/looking_box_2.svg) no-repeat; }
-
-#main .looking .wrapper_box .box .circle .looking_box_3 { width: 65px; height: 63px; margin: 0 0 5px; background: url(../img/svg/looking_box_3.svg) no-repeat; }
-
-#main .looking .wrapper_box .box .circle .looking_box_4 { width: 51px; height: 52px; background: url(../img/svg/looking_box_4.svg) no-repeat; }
-
-#main .looking .wrapper_box .box .circle .looking_box_5 { width: 45px; height: 100%; margin: 20px 0 0; background: url(../img/svg/looking_box_5.svg) no-repeat; }
-
-#main .looking .wrapper_box .box .circle .looking_box_6 { width: 40px; height: 61px; background: url(../img/svg/looking_box_6.svg) no-repeat; }
-
-#main .looking .wrapper_box .box .circle .looking_box_7 { width: 50px; height: 52px; background: url(../img/svg/looking_box_7.svg) no-repeat; }
-
-#main .looking .wrapper_box .box .circle .looking_box_8 { width: 41px; height: 60px; background: url(../img/svg/looking_box_8.svg) no-repeat; }
+#main .looking .wrapper_box .box .circle img { display: inline-block; vertical-align: middle; }
 
 #main .best_prise, #main .popular_tovar, #main .tovar_block { max-width: 960px; margin: 0 auto; text-align: center; padding: 0 0 20px; }
 
@@ -353,15 +337,7 @@ a { text-decoration: none; outline: none; }
 
 #main .wrapper_guarantee .guarantee .wrapper_guarantee_box .guarantee_box .circle { width: 180px; height: 180px; background: #fff; line-height: 170px; border: 3px solid #f3b9a7; -webkit-border-radius: 50%; border-radius: 50%; margin: 0 auto 20px; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
-#main .wrapper_guarantee .guarantee .wrapper_guarantee_box .guarantee_box .circle i { display: inline-block; vertical-align: middle; }
-
-#main .wrapper_guarantee .guarantee .wrapper_guarantee_box .guarantee_box .circle .guarantee_box_1 { width: 92px; height: 110px; background: url(../img/svg/guarantee_box_1.svg) no-repeat; }
-
-#main .wrapper_guarantee .guarantee .wrapper_guarantee_box .guarantee_box .circle .guarantee_box_2 { width: 76px; height: 110px; background: url(../img/svg/guarantee_box_2.svg) no-repeat; }
-
-#main .wrapper_guarantee .guarantee .wrapper_guarantee_box .guarantee_box .circle .guarantee_box_3 { width: 90px; height: 90px; background: url(../img/svg/guarantee_box_3.svg) no-repeat; }
-
-#main .wrapper_guarantee .guarantee .wrapper_guarantee_box .guarantee_box .circle .guarantee_box_4 { width: 109px; height: 110px; background: url(../img/svg/guarantee_box_4.svg) no-repeat; }
+#main .wrapper_guarantee .guarantee .wrapper_guarantee_box .guarantee_box .circle img { display: inline-block; vertical-align: middle; }
 
 #main .reviews { max-width: 960px; margin: 0 auto; text-align: center; padding: 50px 0 30px; }
 
@@ -409,7 +385,7 @@ a { text-decoration: none; outline: none; }
 
 #main .wrapper_payment_tovar .payment_tovar .payment_tovar_box .circle:hover { border: 3px solid #f15c62; -webkit-transition: all .3s ease; transition: all .3s ease; }
 
-#main .wrapper_payment_tovar .payment_tovar .payment_tovar_box .circle .payment_tovar_1 { width: 127px; height: 155px; vertical-align: bottom; display: inline-block; background: url(../img/svg/payment_tovar_1.svg) no-repeat; }
+#main .wrapper_payment_tovar .payment_tovar .payment_tovar_box .circle img { vertical-align: bottom; display: inline-block; }
 
 #main .wrapper_payment_tovar .payment_tovar .payment_tovar_box p { margin: 0; line-height: 25px; }
 
@@ -421,7 +397,7 @@ a { text-decoration: none; outline: none; }
 
 #main .delivery_tovar .delivery_tovar_box .circle:hover { border: 3px solid #f15c62; -webkit-transition: all .3s ease; transition: all .3s ease; }
 
-#main .delivery_tovar .delivery_tovar_box .circle .delivery_tovar_1 { width: 137px; height: 165px; vertical-align: bottom; display: inline-block; background: url(../img/svg/delivery_tovar_1.svg) no-repeat; }
+#main .delivery_tovar .delivery_tovar_box .circle img { vertical-align: bottom; display: inline-block; }
 
 #main .delivery_tovar .delivery_tovar_box p { margin: 0 0 20px; line-height: 25px; }
 
