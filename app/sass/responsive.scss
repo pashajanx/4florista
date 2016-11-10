@@ -1,4 +1,10 @@
-﻿@media only screen and (max-width: 980px) {
+﻿@media only screen and (max-width: 1000px)  {
+ 	.item #main .cart_tovar .wrapper_cart_tovar_description {
+ 		margin: 0;
+ 		padding: 30px 15px 0;
+ 	}
+ }
+@media only screen and (max-width: 980px) {
 	#header .header_top, 
 	#header .footer_top,
 	#footer .header_top, 
@@ -52,7 +58,8 @@
 	#main .best_prise .wrapper_best_prise_box, 
 	#main .best_prise .wrapper_popular_tovar_box, 
 	#main .popular_tovar .wrapper_best_prise_box, 
-	#main .popular_tovar .wrapper_popular_tovar_box {
+	#main .popular_tovar .wrapper_popular_tovar_box,
+	#main .tovar_block .wrapper_best_prise_box  {
 		padding: 0 30px;
 	}
 	#main .best_prise .wrapper_best_prise_box .best_prise_box, 
@@ -62,7 +69,8 @@
 	#main .popular_tovar .wrapper_best_prise_box .best_prise_box, 
 	#main .popular_tovar .wrapper_best_prise_box .popular_tovar_box, 
 	#main .popular_tovar .wrapper_popular_tovar_box .best_prise_box, 
-	#main .popular_tovar .wrapper_popular_tovar_box .popular_tovar_box {
+	#main .popular_tovar .wrapper_popular_tovar_box .popular_tovar_box,
+	#main .tovar_block .wrapper_best_prise_box .best_prise_box  {
 		max-width: 48%;
 		margin: 0 4% 20px 0;
 		&:nth-child(2n) {
@@ -104,6 +112,24 @@
 			margin: 0; 
 		}
 	}
+	.wrapper_basket .basket {
+		padding: 11px 30px;
+		.number_cost {
+			width: 49%;
+			.info_basket {
+				margin: 10px 0 0 5%;
+				.cost, .total {
+					display: block;
+				}
+			}
+		}
+		.wrapper_button {
+			width: 50%;
+			button, .cancel{
+				max-width: 140px;
+			}
+		}
+	}
 }
 @media only screen and (max-width: 800px) {
 	#header .header_bottom .logo {
@@ -142,6 +168,14 @@
 			}
 		}
 	} 
+	.item #main .cart_tovar .wrapper_cart_tovar_description {
+		.slider_cart_tovar{
+			width: 44%;
+		}
+		.description {
+			width: 53%;
+		}
+	}
 }
 @media only screen and (max-width: 760px) {
 	#header .header_bottom {
@@ -187,6 +221,49 @@
 					border: 2px solid #f67076;
 					transition: all .3s ease;
 				}
+			}
+		}
+	}
+	.wrapper_basket {
+		.basket {
+			padding: 11px 30px 20px;
+			.number_cost {
+				width: 100%;
+				text-align: center;
+				.info_basket {
+					text-align: left;
+				}
+			}
+			.wrapper_button {
+				width: 100%;
+				text-align: center;
+				margin: 20px 0 0;
+			}
+		}
+	}
+	.items #main .tovar_block {
+		.filter {
+			.title {
+				display: block;
+				margin: 0 0 15px;
+			}
+			.filter_botton {
+				margin: 0 0 15px 7px;
+				&:first-child {
+					margin: 0 0 15px 0;
+				}
+			}
+		}
+	}
+	.item #main .cart_tovar {
+		.wrapper_cart_tovar_description {
+			.slider_cart_tovar{
+				width: 100%;
+			}
+			.description {
+				width: 100%;
+				text-align: center;
+				margin: 15px 0 0;
 			}
 		}
 	}
@@ -269,7 +346,8 @@
 	#main .popular_tovar .wrapper_popular_tovar_box,
 	#main .wrapper_guarantee .guarantee .wrapper_guarantee_box,
 	#main .wrapper_payment_tovar .payment_tovar,
-	#main .contacnts .wrapper_contacnts_box .contacnts_box {
+	#main .contacnts .wrapper_contacnts_box .contacnts_box,
+	#main .tovar_block .wrapper_best_prise_box  {
 		padding: 0 15px;
 	}
 	#main .delivery_tovar,
@@ -294,6 +372,45 @@
 						display: block;
 						margin: 0 0 25px;
 					}
+				}
+			}
+		}
+	}
+	.wrapper_basket {
+		.basket {
+			padding: 11px 15px 20px;
+			.number_cost {
+				.bascet_icon {
+					width: 34px;
+					margin: 4px 0 0;
+				}
+				.info_basket {
+					margin: 0 0 0 3%;
+				}
+			}
+			.wrapper_button {
+				 button {
+				 	margin: 0 0 0 5px;
+				 }
+			}
+		}
+	}
+	.items #main .tovar_block {
+		.filter {
+			max-width: 180px;
+			margin: 35px auto 0;
+			.filter_botton {
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+	.item #main .cart_tovar {
+		.wrapper_cart_tovar_description {
+			.description {
+				.prise_block {
+					padding: 0 0 25px;
 				}
 			}
 		}

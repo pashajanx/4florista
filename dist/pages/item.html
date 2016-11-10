@@ -6,15 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>4florista</title>
 		 <link rel="shortcut icon" href="favicon.ico">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet">
-        
+		<link href="css/style.min.css" rel="stylesheet">
+		<link href="css/responsive.min.css" rel="stylesheet">
 	</head>
 	<body class="item">
 		<header id="header">
 			<div class="header_top clearfix">
 				<div class="wrapper_nav clearfix">
-					<ul class="nav">
+					<ul class="nav cl-effect-11">
 						<li><a href="#">О мастерской</a></li>
 						<li><a href="#">Доставка и оплата</a></li>
 						<li><a href="#">Свадебная флористика</a></li>
@@ -33,20 +32,58 @@
 						</ul>
 					</div>
 					<!-- end mobile menu -->
-					<script>
-						$(".toggle-mnu_1").click(function() {
-						  $(this).toggleClass("on");
-						  $(".main-mnu_1").slideToggle();
-						  return false;
-						});
-					</script>
-					<div class="login">
+					<!-- <div class="login">
 						<a href="#">
-							<i class="login_icon"></i>
+							<i>
+								<svg version="1.1" class="login_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="59.3 123.4 476.7 595.2" style="enable-background:new 59.3 123.4 476.7 595.2;" xml:space="preserve">
+									<path d="M297.6,440.4c88.1,0,119.8-88.2,128.1-160.7c10.2-89.3-32-156.4-128.1-156.4c-96.1,0-138.3,67.2-128.1,156.4
+										C177.9,352.2,209.6,440.4,297.6,440.4z"/>
+									<path d="M535.9,650.4c-1-28.1-4.3-56.4-9.2-84c-5.9-33.5-13.5-82.7-42.8-104.5c-16.9-12.6-38.8-16.8-58.2-24.4
+										c-9.4-3.7-17.9-7.4-25.8-11.6c-26.8,29.4-61.7,44.7-102.3,44.7c-40.6,0-75.5-15.4-102.3-44.7c-7.9,4.2-16.4,7.9-25.8,11.6
+										c-19.4,7.6-41.3,11.8-58.2,24.4c-29.3,21.8-36.8,71-42.8,104.5c-4.9,27.7-8.2,55.9-9.2,84c-0.7,21.8,10,24.8,28.2,31.4
+										c22.8,8.2,46.4,14.3,70.1,19.3c45.8,9.7,93,17.1,140,17.4c47-0.3,94.2-7.8,140-17.4c23.7-5,47.3-11.1,70.1-19.3
+										C525.9,675.2,536.7,672.2,535.9,650.4z"/>
+								</svg></i>
 							Вход</a> / 
 						<a href="#">Регистрация</a>
+					</div> -->
+					<div class="personal_area">
+						<div class="personal_area_button">
+							<i>
+								<svg version="1.1" class="login_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="59.3 123.4 476.7 595.2" style="enable-background:new 59.3 123.4 476.7 595.2;" xml:space="preserve">
+									<path d="M297.6,440.4c88.1,0,119.8-88.2,128.1-160.7c10.2-89.3-32-156.4-128.1-156.4c-96.1,0-138.3,67.2-128.1,156.4
+										C177.9,352.2,209.6,440.4,297.6,440.4z"/>
+									<path d="M535.9,650.4c-1-28.1-4.3-56.4-9.2-84c-5.9-33.5-13.5-82.7-42.8-104.5c-16.9-12.6-38.8-16.8-58.2-24.4
+										c-9.4-3.7-17.9-7.4-25.8-11.6c-26.8,29.4-61.7,44.7-102.3,44.7c-40.6,0-75.5-15.4-102.3-44.7c-7.9,4.2-16.4,7.9-25.8,11.6
+										c-19.4,7.6-41.3,11.8-58.2,24.4c-29.3,21.8-36.8,71-42.8,104.5c-4.9,27.7-8.2,55.9-9.2,84c-0.7,21.8,10,24.8,28.2,31.4
+										c22.8,8.2,46.4,14.3,70.1,19.3c45.8,9.7,93,17.1,140,17.4c47-0.3,94.2-7.8,140-17.4c23.7-5,47.3-11.1,70.1-19.3
+										C525.9,675.2,536.7,672.2,535.9,650.4z"/>
+								</svg></i>Личный кабинет
+							<ul class="drop">
+								<li><a href="#">Мой профиль</a></li>
+								<li><a href="#">История заказов</a></li>
+								<li><a href="#">Выйти</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
+				<!-- Cart -->
+				<div class="wrapper_basket">
+					<div class="basket">
+						<div class="number_cost">
+							<i class="bascet_icon"><img src="img/svg/bascet_icon.svg" alt=""></i>
+							<span class="info_basket">В вашей корзине: <span class="cost">2 букета</span></span>
+							<span class="info_basket">На сумму: <span class="total">3000 рублей</span></span>
+						</div>
+						<div class="wrapper_button">
+							<button class="cancel btn">Отменить<span></span></button>
+							<button class="buy">Купить</button>
+						</div>
+					</div>
+				</div>
+				<!-- Cart -->
 			</div>
 			<div class="header_bottom clearfix">
 				<div class="logo">
@@ -95,181 +132,109 @@
 			</div>
 		</header>
 		<main id="main">
-		    <div class="looking">
-		    	<div class="wrapper_img_petals"><img src="img/petals.png" alt=""></div>
-		    	<h3>Что вы ищите?</h3>
-		    	<div class="wrapper_box">
-			    	<div class="box">
-			    		<a href="#">
-			    			<div class="circle"><i class="looking_box_1"></i></div>
-			    			<span>Букеты</span>
-			    		</a>
-			    	</div>
-			    	<div class="box">
-			    		<a href="#">
-			    			<div class="circle"><i class="looking_box_2"></i>
-			    			</div>
-			    			<span>Композиции</span>
-			    		</a>
-			    	</div>
-			    	<div class="box">
-			    		<a href="#">
-			    			<div class="circle">
-								<i class="looking_box_3"></i>
-			    			</div>
-			    			<span>Корзины</span>
-			    		</a>
-			    	</div>
-			    	<div class="box">
-			    		<a href="#">
-			    			<div class="circle">
-								<i class="looking_box_4"></i>
-			    			</div>
-			    			<span>Подарки</span>
-			    		</a>
-			    	</div>
-			    	<div class="box">
-			    		<a href="#">
-			    			<div class="circle">
-								<i class="looking_box_5"></i>
-			    			</div>
-			    			<span>Корпоративные</span>
-			    		</a>
-			    	</div>
-			    	<div class="box">
-			    		<a href="#">
-			    			<div class="circle">
-								<i class="looking_box_6"></i>
-			    			</div>
-			    			<span>Подарки</span>
-			    		</a>
-			    	</div>
-			    	<div class="box">
-			    		<a href="#">
-			    			<div class="circle">
-								<i class="looking_box_7"></i>
-			    			</div>
-			    			<span>Подарки</span>
-			    		</a>
-			    	</div>
-			    	<div class="box">
-			    		<a href="#">
-			    			<div class="circle">
-								<i class="looking_box_8"></i>
-			    			</div>
-			    			<span>Подарки</span>
-			    		</a>
-			    	</div>
-			    </div>
-		    </div>
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная страница</a>/</li>
+				<li><a href="#">Каталог</a>/</li>
+				<li><a href="#">Букеты</a>/</li>
+				<li class="active">Букет из красных роз и ромашек</li>
+			</ul>
+			<div class="cart_tovar">
+				<h3>БУКЕТ ИЗ красных РОЗ и ромашек</h3>
+				<div class="wrapper_cart_tovar_description">
+				    <div class="slider_cart_tovar">
+						<div class="clearfix">
+			                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+			                    <li data-thumb="img/cart_tovar_1.jpg"> 
+			                        <img src="img/cart_tovar_1.jpg" style="width:100%;" alt="" />
+			                    </li>
+			                    <li data-thumb="img/cart_tovar_1.jpg"> 
+			                        <img src="img/cart_tovar_1.jpg" style="width:100%;" alt="" />
+			                    </li>
+			                    <li data-thumb="img/cart_tovar_1.jpg"> 
+			                        <img src="img/cart_tovar_1.jpg" style="width:100%;" alt="" />
+			                    </li>
+			                    <li data-thumb="img/cart_tovar_1.jpg"> 
+			                        <img src="img/cart_tovar_1.jpg" style="width:100%;" alt="" />
+			                    </li>
+			                    <li data-thumb="img/cart_tovar_1.jpg"> 
+			                        <img src="img/cart_tovar_1.jpg" style="width:100%;" alt="" />
+			                    </li>
+			                </ul>
+			            </div>
+				    </div>
+				    <div class="description">
+				    	<div class="prise_block">
+				    		<strong class="title">Стоимость букета:</strong>
+				    		<div class="prise">
+					    		<span class="new">1399 р.</span>
+					    		<span class="old">1399 р.</span>
+					    	</div>
+					    	<button class="buy">Купить</button>
+							<button class="buyToClick btn">Купить в 1 клик<span></span></button>
+				    	</div>
+				    	<div class="rows">
+				    		<strong class="title">Описание:</strong>
+				    		<p>Букет из красных роз и ромашек роз: одноголовая кремовая и розовая кустовая с добавление ромашки камиллы. Упаковка - тканевых бантик.</p>
+				    	</div>
+				    	<div class="rows">
+				    		<strong class="title">Состав:</strong>
+				    		<span>ремовая роза 19 шт</span>
+				    		<span>Ромашка камилла</span>
+				    	</div>
+				    	<div class="rows">
+				    		<strong class="title">Описание:</strong>
+							<span>ремовая роза 19 шт</span>
+				    		<span>Ромашка камилла</span>
+				    	</div>
+				    </div>
+				</div>
+			</div>
 		   	<div class="tovar_block">
-		   		<h3>Букеты</h3>
+		   		<h3>Похожие букеты</h3>
 		   		<div class="wrapper_best_prise_box clearfix">
 		   			<div class="best_prise_box">
-			   			<div class="wrapper_img">
-			   				<img src="img/best_prise_box_1.jpg" alt="">
-			   			</div>
-			   			<span class="name_tovar">Весенняя корзинка</span>
-			   			<div class="prise">
-			   				<span class="new">1399 р.</span>
-			   				<span class="old">1900 р.</span>
-			   			</div>
-			   			<a href="#" class="buy">Купить</a>
-			   			<a href="#" class="buyToClick">Купить в 1 клик</a>
-			   			<div class="action">Акция</div>
-		   			</div>
-		   			<div class="best_prise_box">
-			   			<div class="wrapper_img">
-			   				<img src="img/best_prise_box_1.jpg" alt="">
-			   			</div>
-			   			<span class="name_tovar">Весенняя корзинка</span>
-			   			<div class="prise">
-			   				<span class="new">1399 р.</span>
-			   				<span class="old">1900 р.</span>
-			   			</div>
-			   			<a href="#" class="buy">Купить</a>
-			   			<a href="#" class="buyToClick">Купить в 1 клик</a>
-			   			<div class="action">Акция</div>
-		   			</div>
-		   			<div class="best_prise_box">
-			   			<div class="wrapper_img">
-			   				<img src="img/best_prise_box_1.jpg" alt="">
-			   			</div>
-			   			<span class="name_tovar">Весенняя корзинка</span>
-			   			<div class="prise">
-			   				<span class="new">1399 р.</span>
-			   				<span class="old">1900 р.</span>
-			   			</div>
-			   			<a href="#" class="buy">Купить</a>
-			   			<a href="#" class="buyToClick">Купить в 1 клик</a>
-			   			<div class="action">Акция</div>
-		   			</div>
-		   			<div class="best_prise_box">
-			   			<div class="wrapper_img">
-			   				<img src="img/best_prise_box_1.jpg" alt="">
-			   			</div>
-			   			<span class="name_tovar">Весенняя корзинка</span>
-			   			<div class="prise">
-			   				<span class="new">1399 р.</span>
-			   				<span class="old">1900 р.</span>
-			   			</div>
-			   			<a href="#" class="buy">Купить</a>
-			   			<a href="#" class="buyToClick">Купить в 1 клик</a>
-			   			<div class="action">Акция</div>
+		   				<a href="#" class="all_block">
+				   			<div class="wrapper_img"><img src="img/best_prise_box_1.jpg" alt=""></div>
+				   			<span class="name_tovar">Весенняя корзинка</span>
+				   			<div class="prise">
+				   				<span class="new">1399 р.</span>
+				   			</div>
+				   		</a>
+			   			<button class="buy">Купить</button><br>
+						<button class="buyToClick btn">Купить в 1 клик<span></span></button>
 		   			</div>
 		   			<div class="best_prise_box">
 		   				<a href="#" class="all_block">
-			   				<div class="wrapper_img">
-			   					<img src="img/best_prise_box_1.jpg" alt="">
-			   				</div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   					<span class="old">1900 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-			   				<span class="buyToClick">Купить в 1 клик</span>
-			   				<div class="new_tovar">Новинка</div>
-			   			</a>
-		   			</div>
-		   			<div class="best_prise_box">
-						<a href="#" class="all_block">
-			   				<div class="wrapper_img"><img src="img/best_prise_box_2.jpg" alt=""></div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   					<span class="old">1900 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-			   				<span class="buyToClick">Купить в 1 клик</span>
-			   				<div class="new_tovar">Новинка</div>
-			   			</a>
+				   			<div class="wrapper_img"><img src="img/best_prise_box_2.jpg" alt=""></div>
+				   			<span class="name_tovar">Весенняя корзинка</span>
+				   			<div class="prise">
+				   				<span class="new">1399 р.</span>
+				   			</div>
+				   		</a>
+			   			<button class="buy">Купить</button><br>
+						<button class="buyToClick btn">Купить в 1 клик<span></span></button>
 		   			</div>
 		   			<div class="best_prise_box">
 		   				<a href="#" class="all_block">
-			   				<div class="wrapper_img"><img src="img/best_prise_box_3.jpg" alt=""></div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   					<span class="old">1900 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-			   				<span class="buyToClick">Купить в 1 клик</span>
-			   				<div class="new_tovar">Новинка</div>
-			   			</a>
+				   			<div class="wrapper_img"><img src="img/best_prise_box_3.jpg" alt=""></div>
+				   			<span class="name_tovar">Весенняя корзинка</span>
+				   			<div class="prise">
+				   				<span class="new">1399 р.</span>
+				   			</div>
+				   		</a>
+			   			<button class="buy">Купить</button><br>
+						<button class="buyToClick btn">Купить в 1 клик<span></span></button>
 		   			</div>
 		   			<div class="best_prise_box">
 		   				<a href="#" class="all_block">
-			   				<div class="wrapper_img"><img src="img/best_prise_box_4.jpg" alt=""></div>
-			   				<span class="name_tovar">Весенняя корзинка</span>
-			   				<div class="prise">
-			   					<span class="new">1399 р.</span>
-			   					<span class="old">1900 р.</span>
-			   				</div>
-			   				<span class="buy">Купить</span>
-			   				<span class="buyToClick">Купить в 1 клик</span>
-			   				<div class="new_tovar">Новинка</div>
-			   			</a>
+				   			<div class="wrapper_img"><img src="img/best_prise_box_4.jpg" alt=""></div>
+				   			<span class="name_tovar">Весенняя корзинка</span>
+				   			<div class="prise">
+				   				<span class="new">1399 р.</span>
+				   			</div>
+				   		</a>
+			   			<button class="buy">Купить</button><br>
+						<button class="buyToClick btn">Купить в 1 клик<span></span></button>
 		   			</div>
 		   		</div>
 		   	</div>
@@ -279,28 +244,28 @@
 			   		<div class="wrapper_guarantee_box">
 			   			<div class="guarantee_box">
 				   			<div class="circle">
-								<i class="guarantee_box_1"></i>
+								<img src="img/svg/guarantee_box_1.svg" alt="" style="width:92px;">
 				   			</div>
 				   			<h4>Оперативная доставка</h4>
 				   			<span>Доставим за 3 часа</span>
 			   			</div>
 			   			<div class="guarantee_box">
 				   			<div class="circle">
-								<i class="guarantee_box_2"></i>
+								<img src="img/svg/guarantee_box_2.svg" alt="" style="width:76px;">
 				   			</div>
 				   			<h4>Точно Как на фото</h4>
 				   			<span>Букет как на сайте</span>
 			   			</div>
 			   			<div class="guarantee_box">
 				   			<div class="circle">
-								<i class="guarantee_box_3"></i>
+								<img src="img/svg/guarantee_box_3.svg" alt="" style="width:90px;">
 				   			</div>
 				   			<h4>Финансовая гарантия</h4>
 				   			<span>Грантируем качество</span>
 			   			</div>
 			   			<div class="guarantee_box">
 				   			<div class="circle">
-								<i class="guarantee_box_4"></i>
+								<img src="img/svg/guarantee_box_4.svg" alt=""  style="width:109px;">
 				   			</div>
 				   			<h4>Лучшая цена</h4>
 				   			<span>И отличное качество</span>
@@ -387,7 +352,7 @@
 					<h3>Оплата товара</h3>
 					<div class="payment_tovar_box">
 						<div class="circle">
-							<i class="payment_tovar_1"></i>
+							<img src="img/svg/payment_tovar_1.svg" alt="" style="width:127px;">
 						</div>
 						<p>Вы можете оплатить свой заказ непосредственно курьеру, который доставит его вам.<br>Вы можете оплатить как наличными, так и кредитной картой.</p>
 					</div>
@@ -397,7 +362,7 @@
 				<h3>Бесплатная доставка</h3>
 				<div class="delivery_tovar_box">
 					<div class="circle">
-						<i class="delivery_tovar_1"></i>
+						<img src="img/svg/delivery_tovar_1.svg" alt="" style="width:137px;">
 					</div>
 					<p>Мы доставим вам товар без оплаты за доставку, если сумма вашего заказа будет более 13,000 рублей.</p>
 					<a href="#" class="detals_prise">Узнать стоимость доставки</a>
@@ -474,54 +439,27 @@
 				</div>
 			</div>
 		</footer>
+		
 		<script src="./js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/slick.min.js"></script>
-		<script type="text/javascript">
-		    $(document).ready(function(){
-		    	
-		      $('.slider').slick({
-			  centerMode: true,
-			  centerPadding: '0px',
-			  slidesToShow: 1,
-			  fade: true,
-			  dots: true,
-			  arrows: false,
-			  responsive: [
-			    {
-			      breakpoint: 768,
-			      settings: {
-			        arrows: false,
-			        centerMode: true,
-			        centerPadding: '0px',
-			        slidesToShow: 1
-			      }
-			    },
-			    {
-			      breakpoint: 480,
-			      settings: {
-			        arrows: false,
-			        centerMode: true,
-			        centerPadding: '0px',
-			        slidesToShow: 1
-			      }
-			    }
-			  ]
+		<script src="js/lightslider.js"></script> 
+	    <script>
+	       $(document).ready(function() {
+				$('#image-gallery').lightSlider({
+					gallery:true,
+					item:1,
+					thumbItem:3,
+					slideMargin: 0,
+					speed:500,
+					auto:false,
+					loop:true,
+					thumbMargin: 15,
+					onSliderLoad: function() {
+						$('#image-gallery').removeClass('cS-hidden');
+					}  
+				});
+				            
 			});
-		    });
-		  </script>
-		  	<script>
-				$(".toggle-mnu_1").click(function() {
-				  $(this).toggleClass("on");
-				  $(".main-mnu_1").slideToggle();
-				  return false;
-				});
-			</script>
-		  	<script>
-				$(".toggle-mnu_2").click(function() {
-				  $(this).toggleClass("on");
-				  $(".main-mnu_2").slideToggle();
-				  return false;
-				});
-			</script>
+	    </script>
+	    <script src="js/common.js"></script>
 	</body>
 </html>

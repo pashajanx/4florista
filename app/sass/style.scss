@@ -2,6 +2,15 @@
 @import "fonts.scss";
 @import "slick-theme";
 @import "slick.scss";
+@import "lightslider";
+$btn-width: 100%;
+$btn-height: 100%;
+$btn-color: #fff;
+
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
 
 $mainColor: #cd9a8a;
 
@@ -9,11 +18,31 @@ $mainColor: #cd9a8a;
 .search input::-moz-placeholder          {opacity: 1; font-family:'Open Sans';  color:#3f3f4d; font-size: 13px; outline: none;}/* Firefox 19+ */
 .search input:-moz-placeholder    	     {opacity: 1; font-family:'Open Sans';  color:#3f3f4d; font-size: 13px; outline: none;}/* Firefox 18- */
 .search input:-ms-input-placeholder      {opacity: 1; font-family:'Open Sans';  color:#3f3f4d; font-size: 13px; outline: none;}
+
+
 * {
 	box-sizing: border-box;
 }
+
 .search input:focus {
 	outline: 0;
+}
+.buy,
+.buyToClick {
+    width: 100%;
+    max-width: 185px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+    background: #f67076;
+    border-radius: 19px;
+    padding: 8px 0 10px;
+    margin: 0 0 20px;
+    border: 2px solid transparent;
+    transition: all .3s ease;
 }
 body {
 	background: #fff;
@@ -35,18 +64,19 @@ a {
 }
 #header, #footer {
 	.header_top, .footer_top {
+		position: relative;
 		background: #fcfafa;
 		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 		.wrapper_nav {
 			max-width: 960px;
 			margin: 0 auto;
-			padding: 14px 0 12px;
+			padding: 0;
 			position: relative;
 			.nav {
 				float: left;
 				list-style: none;
 				margin: 0;
-				padding: 0;
+				padding: 14px 0 12px;
 				li {
 					float: left;
 					margin: 0 30px 0 0;
@@ -56,33 +86,122 @@ a {
 					a {
 						color: #3f3f4d;
 						font-size: 14px;
+						position: relative;
+						padding: 0 0 2px;
+						&:after {
+							content: '';
+							position: absolute;
+							left: 50%;
+							bottom: 0;
+							height: 1px;
+							width: 0;
+							background: $mainColor;
+							transition: all .3s ease;
+						}
 						&:hover {
-							color: $mainColor;
-							text-decoration: underline; 
+							color: $mainColor; 
+							transition: all .3s ease;
+						}
+						&:hover:after {
+							color: $mainColor; 
+							left: 0;
+							right: 0;
+							width: 100%;
+							transition: all .3s ease;
 						}
 					}
 				}
 			}
-			.login {
+			.login, .personal_area {
 				float: right;
 				position: relative;
 				z-index: 2;
-				a {
+				padding: 14px 0 12px;
+				a, .personal_area_button {
 					color: #3f3f4d;
 					font-size: 14px;
+					transition: all .2s ease;
 					&:hover {
 						color: $mainColor;
+						transition: all .2s ease;
 					}
-					i.login_icon {
-						background: url(../img/svg/login_icon.svg) no-repeat;
+					&:hover .login_icon  {
+						fill: $mainColor;
+						transition: all .2s ease;
+					}
+					i {
+						// background: url(../img/svg/login_icon.svg) no-repeat;
 						margin: 0 7px 0 0;
-						width: 13px;
-						height: 16px;
+						// width: 13px;
+						// height: 16px;
 						display: inline-block;
-						vertical-align: middle;
+						vertical-align: top;
+						.login_icon {
+							width: 13px;
+							height: 16px;
+							display: inline-block;
+							vertical-align: top;
+							fill: #3f3f4d;
+						}
+
 					}
 				}
 			}
+			.personal_area {
+				padding: 0;
+				background: rgba(242,242,242,0.98);
+				position: relative;
+				z-index: 9999;
+					.personal_area_button {
+						position: relative;
+						padding: 14px 26px 14px 13px;
+						cursor: pointer;
+						&:after {
+							content: '';
+							display: block;
+							position: absolute;
+							right: 10px;
+							top: 50%;
+							width: 0;
+							height: 0;
+							margin: -2px 0 0;
+							border-left: 3px solid transparent;
+							border-right: 3px solid transparent;
+							border-top: 4px solid #212121;
+						}
+						&:hover .drop{
+							visibility: visible;
+							transition: all .3s ease;
+						}
+						.drop {
+							visibility: hidden;
+							position: absolute;
+							top: 45px;
+							left: 0;
+							right: 0;
+							z-index: 9999;
+							list-style: none;
+							text-align: center;
+							margin: 0;
+							padding: 0;
+							border-radius: 0 0 5px 5px;
+							width: 100%;
+							background: rgba(242,242,242,0.98);
+							box-shadow: 0 6px 7px -6px rgba(0, 0, 0, 0.15) inset;
+							transition: all .3s ease;
+							li {
+								border-bottom: 1px solid #fff;
+								&:last-child {
+									border: 0;
+								}
+								a {
+									display: block;
+									padding: 13px 0;
+								}
+							}
+						}
+					}
+				}
 		}
 		.mob-menu {
 		    position: absolute;
@@ -234,6 +353,7 @@ a {
 					width: 93%;
 					background: url(../img/svg/search_icon.svg) no-repeat 0 0;
 					background-size: 17px 18px;
+					-webkit-appearance: none;
 				}
 				.submit {
 					width: 7%;
@@ -244,6 +364,10 @@ a {
 					float: right;
 					cursor: pointer;
 					padding: 0;
+					-webkit-appearance: none;
+					&:hover {
+						opacity: 0.8;
+					}
 
 				}
 			}
@@ -276,8 +400,7 @@ a {
 					margin: 0 8px 0 0;
 					width: 20px;
 					height: 20px;
-					display: inline-block;
-					vertical-align: middle;
+					float: left;
 					background: url(../img/svg/clock_icon.svg) no-repeat;
 				}
 			}	
@@ -287,6 +410,11 @@ a {
 				color: #212121;
 				display: inline-block;
 				margin: 0 0 5px;
+				transition: all .3s ease;
+				&:hover {
+					color: $mainColor;
+					transition: all .3s ease;
+				}
 				i.phone_icon  {
 					margin: 0 7px 0 0;
 					width: 18px;
@@ -312,6 +440,31 @@ a {
 	}
 }
 #main {
+	.breadcrumbs {
+		padding: 35px 10px 20px;
+		margin: 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			color: $mainColor;
+			font-size: 14px;
+			margin: 0 7px 10px 0;
+			&:last-child {
+				margin: 0 0 10px;
+			}
+			a {
+				color: $mainColor;
+				font-size: 14px;
+				margin: 0 10px 0 0;
+				transition: all .3s ease;
+				&:hover {
+					color: #f15c62;
+					transition: all .3s ease;
+				}
+			}
+		}
+	}
 	.wrapper_slider {
 		background: url(../img/bg_pink.jpg) repeat;
 		position: relative;
@@ -481,6 +634,7 @@ a {
 			margin: 40px 0 0;
 			.box {
 				display: inline-block;
+				vertical-align: top;
 				width: 116px;
 				margin: 0 0 20px;
 				a {
@@ -546,14 +700,8 @@ a {
 					transition: all .5s ease;
 				}
 				.all_block {
-					width: 100%;
-					display: inline-block;
+					display: block;
 					color: #212121;
-					position: relative;
-					&:hover .buy{
-						background: #f15c62;
-						transition: all .3s ease;
-					}
 				}
 				.wrapper_img {
 					height: 214px;
@@ -596,6 +744,15 @@ a {
 					margin: 0 0 20px;
 					border: 2px solid transparent;
 					transition: all .3s ease;
+				}
+				.buy {
+					&:hover {
+						background: #f15c62;
+						transition: all .3s ease;
+					}
+				}
+				.buyToClick {
+					font-weight: normal;
 				}
 				.action, .new_tovar {
 					color: #fff;
@@ -650,6 +807,7 @@ a {
 					text-align: center;
 					width: 200px;
 					display: inline-block;
+					vertical-align: top;
 					margin: 0 47px 25px 0;
 					&:hover .circle {
 						border: 3px solid #f15c62;
@@ -1029,13 +1187,92 @@ a {
 	}
 	.footer_top {
 		.main-mnu_2 {
+			float: left;
 			position: static;
-			margin: 35px 0 0;
+			margin: 10px 0 0;
 			padding: 0;
 		}
 	}
 } 
-.item {
+.wrapper_basket {
+	position: absolute;
+  	top: 100%;
+  	z-index: 9;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 6px 7px -6px rgba(0, 0, 0, 0.15), 0 6px 7px -6px rgba(0, 0, 0, 0.15) inset;
+	&.fixed-style {
+		position: fixed;
+  		top: 0;
+  		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	}
+	.basket {
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 11px 0;
+		overflow: hidden;
+		text-align: center;
+		.number_cost {
+			width: 56%;
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+			.bascet_icon {
+				width: 60px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.info_basket {
+				color: $mainColor;
+				display: inline-block;
+				font-weight: 600;
+				margin: 20px 0 0 5%;
+				.cost, .total {
+					color: #212121;
+				}
+			}
+		}
+		.wrapper_button {
+			width: 43%;
+			display: inline-block;
+			vertical-align: top;
+			text-align: right;
+			margin: 6px 0 0;
+			button {
+				display: inline-block;
+				margin: 0 0 0 15px;
+				&:first-child {
+					margin: 0;
+				}
+			}
+			.buy {
+				&:hover {
+					background: #f15c62;
+					transition: all .3s ease;
+				}
+			}
+			.cancel {
+			    width: 100%;
+			    max-width: 185px;
+			    color: $mainColor;
+			    font-size: 14px;
+			    line-height: 20px;
+			    cursor: pointer;
+			    display: inline-block;
+			    background: transparent;
+			    border-radius: 19px;
+			    padding: 8px 0 10px;
+			    border: 1px solid $mainColor;
+			    transition: all .3s ease;
+			    &:hover {
+			    	color: #fff;
+			    }
+			}
+
+		}
+	}
+}
+.items, .item {
 	#main {
 		box-shadow: inset 0 6px 7px -6px rgba(0,0,0,.15);
 		.wrapper_img_petals {
@@ -1044,7 +1281,8 @@ a {
 		.tovar_block {
 			.wrapper_best_prise_box {
 				.best_prise_box {
-					max-height: 425px;
+					padding: 0 0 20px;
+					max-height: 435px;
 					.buy {
 						margin: 0 0 15px;
 						padding: 10px 0;
@@ -1053,7 +1291,7 @@ a {
 						}
 					}
 					.buyToClick {
-						margin: 0 0 15px;
+						margin: 0;
 						font-size: 14px;
 						padding: 11px 0;
 						color: #e9aa95;
@@ -1061,7 +1299,166 @@ a {
 						border: 1px solid #e9aa95;
 						&:hover {
 							color: #fff;
+							// background: #e9aa95;
+						}
+					}
+				}
+			}
+			.filter {
+				margin: 35px 0 0;
+				.title {
+					font-weight: 600;
+				}
+				 .filter_botton,  {
+					min-width: 120px;
+				 	margin: 0 0 0 7px;
+					font-size: 14px;
+					padding: 7px 3px;
+					color: #e9aa95;
+					cursor: pointer;
+					font-weight: bold;
+					border-radius: 7px;
+					background: transparent;
+					border: 1px solid #e9aa95;
+					transition: all 0.3s;
+					&:hover, &.active {
+						color: #fff;
+						background: #e9aa95;
+						transition: all 0.3s;
+					}
+				}
+			}
+			.pagination {
+				margin: 0;
+				padding: 15px 0;
+				list-style: none;
+				li {
+					display: inline-block;
+					vertical-align: top;
+					a {
+						display: inline-block;
+						width: 32px;
+						font-size: 14px;
+						padding: 7px 3px;
+						color: #e9aa95;
+						font-weight: bold;
+						border-radius: 7px;
+						background: transparent;
+						border: 1px solid #e9aa95;
+						transition: all 0.3s;
+						&:hover, &.active {
+							color: #fff;
 							background: #e9aa95;
+							transition: all 0.3s;
+						}
+					}
+					&.active a{
+						color: #fff;
+						background: #e9aa95;
+					}
+				}
+			}
+		}
+	}
+}
+.item {
+	#main {
+		.tovar_block {
+			padding: 40px 0 20px;
+		}
+		.cart_tovar {
+			max-width: 960px;
+			margin: 0 auto;
+			text-align: center;
+			.wrapper_cart_tovar_description {
+				padding: 30px 0 0;
+				margin: 0 -15px;
+				.slider_cart_tovar {
+					max-width: 440px;
+					width: 46%;
+					display: inline-block;
+					vertical-align: top;
+					.lSSlideWrapper {
+						box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.1), -1px -1px 9px rgba(0, 0, 0, 0.1);
+						border-radius: 15px;
+						li {
+							padding: 30px 20px;
+						}
+					}
+					.lSSlideOuter {
+						    padding: 10px;
+						}
+						.lSSlideOuter .lSPager.lSGallery li {
+							box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1), -1px -1px 5px rgba(0, 0, 0, 0.1);
+							border-radius: 15px;
+							transition: all 0.5s;
+							&:hover {
+								box-shadow: none;
+								transition: all 0.5s;
+							}
+						}
+						.lSSlideOuter .lSPager.lSGallery {
+						  	padding: 10px;
+						    box-sizing: content-box;
+						    margin-left: -10px;
+						}
+				}
+				.description {
+					width: 51%;
+					display: inline-block;
+					vertical-align: top;
+					margin: 20px 0 0 2%;
+					text-align: left;
+					.title {
+						font-size: 18px;
+						display: block;
+						margin: 0 0 15px;
+					}
+					.prise_block {
+						box-shadow: 0px 9px 6px -6px rgba(0, 0, 0, 0.1);
+						// padding: 0 0 25px;
+						margin: 0 0 40px;
+						.prise {
+							margin: 0 0 20px;
+							.new {
+								display: inline-block;
+								font-size: 36px;
+								line-height: 38px;
+								color: #f67076;
+								font-weight: bold;
+								margin: 0 5px 0 0;
+							}
+							.old {
+								display: inline-block;
+								font-weight: 600;
+								font-size: 24px;
+								color: #dcdcdc;
+								text-decoration: line-through;
+							}
+						}
+						.buyToClick {
+							color: #e9aa95;
+							font-weight: normal;
+							font-size: 14px;
+							margin: 0;
+							&:hover {
+								color: #fff;
+							}
+						}
+						.buy {
+							margin: 0 12px 20px 0;
+							&:hover {
+								background: #f15c62;
+							}
+						}
+					}
+					.rows {
+						margin: 0 0 20px;
+						p {
+							margin: 0;
+						}
+						span {
+							display: block;
 						}
 					}
 				}
@@ -1069,3 +1466,48 @@ a {
 		}
 	}
 }
+
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e9aa95;
+    background: transparent;
+    color: #FFF;
+    span {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: block;
+        @include size(0);
+        border-radius: 50%;
+        background: #e9aa95;
+        transform: translate(-50%, -50%);
+        transition: width 0.5s, height 0.5s;
+        z-index: -1;
+    }
+    &:hover {
+        color: #fff;
+        span {
+            @include size($btn-width*3.5);
+        }
+    }
+    &:active {
+        background: #e9aa95;
+    }
+}
+
+
+
+
+
+
+
+
+// span {
+//     transition: none;
+//   }
+
+

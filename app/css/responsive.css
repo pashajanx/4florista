@@ -1,3 +1,5 @@
+@media only screen and (max-width: 1000px) { .item #main .cart_tovar .wrapper_cart_tovar_description { margin: 0; padding: 30px 15px 0; } }
+
 @media only screen and (max-width: 980px) { #header .header_top, #header .footer_top, #footer .header_top, #footer .footer_top { padding: 0 30px; }
   #header .header_bottom, #header .footer_bottom, #footer .header_bottom, #footer .footer_bottom { padding: 28px 30px 23px; }
   #header .header_bottom .contacts .work_time .one_line { display: block; }
@@ -8,9 +10,9 @@
   #main .looking .wrapper_img { display: none; }
   #header .header_top .wrapper_nav .nav, #header .footer_top .wrapper_nav .nav, #footer .header_top .wrapper_nav .nav, #footer .footer_top .wrapper_nav .nav { display: none; }
   #header .header_top .wrapper_nav .mob-menu, #header .footer_top .wrapper_nav .mob-menu, #footer .header_top .wrapper_nav .mob-menu, #footer .footer_top .wrapper_nav .mob-menu { display: block; }
-  #main .best_prise .wrapper_best_prise_box, #main .best_prise .wrapper_popular_tovar_box, #main .popular_tovar .wrapper_best_prise_box, #main .popular_tovar .wrapper_popular_tovar_box { padding: 0 30px; }
-  #main .best_prise .wrapper_best_prise_box .best_prise_box, #main .best_prise .wrapper_best_prise_box .popular_tovar_box, #main .best_prise .wrapper_popular_tovar_box .best_prise_box, #main .best_prise .wrapper_popular_tovar_box .popular_tovar_box, #main .popular_tovar .wrapper_best_prise_box .best_prise_box, #main .popular_tovar .wrapper_best_prise_box .popular_tovar_box, #main .popular_tovar .wrapper_popular_tovar_box .best_prise_box, #main .popular_tovar .wrapper_popular_tovar_box .popular_tovar_box { max-width: 48%; margin: 0 4% 20px 0; }
-  #main .best_prise .wrapper_best_prise_box .best_prise_box:nth-child(2n), #main .best_prise .wrapper_best_prise_box .popular_tovar_box:nth-child(2n), #main .best_prise .wrapper_popular_tovar_box .best_prise_box:nth-child(2n), #main .best_prise .wrapper_popular_tovar_box .popular_tovar_box:nth-child(2n), #main .popular_tovar .wrapper_best_prise_box .best_prise_box:nth-child(2n), #main .popular_tovar .wrapper_best_prise_box .popular_tovar_box:nth-child(2n), #main .popular_tovar .wrapper_popular_tovar_box .best_prise_box:nth-child(2n), #main .popular_tovar .wrapper_popular_tovar_box .popular_tovar_box:nth-child(2n) { margin: 0 0 20px; }
+  #main .best_prise .wrapper_best_prise_box, #main .best_prise .wrapper_popular_tovar_box, #main .popular_tovar .wrapper_best_prise_box, #main .popular_tovar .wrapper_popular_tovar_box, #main .tovar_block .wrapper_best_prise_box { padding: 0 30px; }
+  #main .best_prise .wrapper_best_prise_box .best_prise_box, #main .best_prise .wrapper_best_prise_box .popular_tovar_box, #main .best_prise .wrapper_popular_tovar_box .best_prise_box, #main .best_prise .wrapper_popular_tovar_box .popular_tovar_box, #main .popular_tovar .wrapper_best_prise_box .best_prise_box, #main .popular_tovar .wrapper_best_prise_box .popular_tovar_box, #main .popular_tovar .wrapper_popular_tovar_box .best_prise_box, #main .popular_tovar .wrapper_popular_tovar_box .popular_tovar_box, #main .tovar_block .wrapper_best_prise_box .best_prise_box { max-width: 48%; margin: 0 4% 20px 0; }
+  #main .best_prise .wrapper_best_prise_box .best_prise_box:nth-child(2n), #main .best_prise .wrapper_best_prise_box .popular_tovar_box:nth-child(2n), #main .best_prise .wrapper_popular_tovar_box .best_prise_box:nth-child(2n), #main .best_prise .wrapper_popular_tovar_box .popular_tovar_box:nth-child(2n), #main .popular_tovar .wrapper_best_prise_box .best_prise_box:nth-child(2n), #main .popular_tovar .wrapper_best_prise_box .popular_tovar_box:nth-child(2n), #main .popular_tovar .wrapper_popular_tovar_box .best_prise_box:nth-child(2n), #main .popular_tovar .wrapper_popular_tovar_box .popular_tovar_box:nth-child(2n), #main .tovar_block .wrapper_best_prise_box .best_prise_box:nth-child(2n) { margin: 0 0 20px; }
   #main .wrapper_guarantee .guarantee .wrapper_guarantee_box { padding: 0 30px; }
   #main .wrapper_guarantee .guarantee .wrapper_guarantee_box .guarantee_box { width: 47%; margin: 0 4% 25px 0; }
   #main .wrapper_guarantee .guarantee .wrapper_guarantee_box .guarantee_box:nth-child(2n) { margin: 0 0 25px; }
@@ -20,7 +22,13 @@
   #main .delivery_tovar { padding: 40px 30px 30px; }
   #main .wrapper_about_us .bg { padding: 40px 30px 30px; }
   #main .contacnts .wrapper_contacnts_box .contacnts_box { width: 100%; margin: 0 0 40px; }
-  #main .contacnts .wrapper_contacnts_box .contacnts_box:last-child { margin: 0; } }
+  #main .contacnts .wrapper_contacnts_box .contacnts_box:last-child { margin: 0; }
+  .wrapper_basket .basket { padding: 11px 30px; }
+  .wrapper_basket .basket .number_cost { width: 49%; }
+  .wrapper_basket .basket .number_cost .info_basket { margin: 10px 0 0 5%; }
+  .wrapper_basket .basket .number_cost .info_basket .cost, .wrapper_basket .basket .number_cost .info_basket .total { display: block; }
+  .wrapper_basket .basket .wrapper_button { width: 50%; }
+  .wrapper_basket .basket .wrapper_button button, .wrapper_basket .basket .wrapper_button .cancel { max-width: 140px; } }
 
 @media only screen and (max-width: 800px) { #header .header_bottom .logo { width: 30%; }
   #header .header_bottom .wrapper_social_search { width: 39%; }
@@ -29,7 +37,9 @@
   #footer .footer_bottom .logo .copyright { margin: 5px 0 0; }
   #footer .footer_bottom .wrapper_social_search { width: 100%; margin: 0 0 25px; float: none; }
   #footer .footer_bottom .wrapper_social_search .social { margin: 0; }
-  #footer .footer_bottom .contacts { float: none; width: 100%; max-width: 100%; text-align: center; } }
+  #footer .footer_bottom .contacts { float: none; width: 100%; max-width: 100%; text-align: center; }
+  .item #main .cart_tovar .wrapper_cart_tovar_description .slider_cart_tovar { width: 44%; }
+  .item #main .cart_tovar .wrapper_cart_tovar_description .description { width: 53%; } }
 
 @media only screen and (max-width: 760px) { #header .header_bottom .logo { width: 100%; float: none; text-align: center; margin: 0 0 15px; }
   #header .header_bottom .logo a span { display: none; }
@@ -39,7 +49,16 @@
   #header .header_bottom .contacts .phone { margin: 0 10px 15px 0; }
   #header .header_bottom .contacts .phone.last { margin: 0 0 15px; }
   #header .header_bottom .contacts .callback { display: block; max-width: 290px; border: 2px solid #f67076; -webkit-border-radius: 20px; border-radius: 20px; padding: 10px 0; margin: 0 auto; background: transparent; -webkit-transition: all .3s ease; transition: all .3s ease; }
-  #header .header_bottom .contacts .callback:hover { background: #f67076; color: #fff; border: 2px solid #f67076; -webkit-transition: all .3s ease; transition: all .3s ease; } }
+  #header .header_bottom .contacts .callback:hover { background: #f67076; color: #fff; border: 2px solid #f67076; -webkit-transition: all .3s ease; transition: all .3s ease; }
+  .wrapper_basket .basket { padding: 11px 30px 20px; }
+  .wrapper_basket .basket .number_cost { width: 100%; text-align: center; }
+  .wrapper_basket .basket .number_cost .info_basket { text-align: left; }
+  .wrapper_basket .basket .wrapper_button { width: 100%; text-align: center; margin: 20px 0 0; }
+  .items #main .tovar_block .filter .title { display: block; margin: 0 0 15px; }
+  .items #main .tovar_block .filter .filter_botton { margin: 0 0 15px 7px; }
+  .items #main .tovar_block .filter .filter_botton:first-child { margin: 0 0 15px 0; }
+  .item #main .cart_tovar .wrapper_cart_tovar_description .slider_cart_tovar { width: 100%; }
+  .item #main .cart_tovar .wrapper_cart_tovar_description .description { width: 100%; text-align: center; margin: 15px 0 0; } }
 
 @media only screen and (max-width: 600px) { #header .header_bottom .contacts .phone { font-size: 14px; letter-spacing: -0.7px; }
   #main .wrapper_slider { background: url(../img/bg_slider_mobile.png) no-repeat center bottom, url(../img/bg_pink.jpg) repeat; margin: 0 auto 20px; }
@@ -54,12 +73,19 @@
   #main .looking .wrapper_box .box { width: 40%; padding: 0 10px; }
   #main .best_prise .wrapper_best_prise_box .best_prise_box, #main .best_prise .wrapper_best_prise_box .popular_tovar_box, #main .best_prise .wrapper_popular_tovar_box .best_prise_box, #main .best_prise .wrapper_popular_tovar_box .popular_tovar_box, #main .popular_tovar .wrapper_best_prise_box .best_prise_box, #main .popular_tovar .wrapper_best_prise_box .popular_tovar_box, #main .popular_tovar .wrapper_popular_tovar_box .best_prise_box, #main .popular_tovar .wrapper_popular_tovar_box .popular_tovar_box, #main .tovar_block .wrapper_best_prise_box .best_prise_box { max-width: 225px; margin: 0 auto 20px; float: none; }
   #main .best_prise .wrapper_best_prise_box .best_prise_box:nth-child(2n), #main .best_prise .wrapper_best_prise_box .popular_tovar_box:nth-child(2n), #main .best_prise .wrapper_popular_tovar_box .best_prise_box:nth-child(2n), #main .best_prise .wrapper_popular_tovar_box .popular_tovar_box:nth-child(2n), #main .popular_tovar .wrapper_best_prise_box .best_prise_box:nth-child(2n), #main .popular_tovar .wrapper_best_prise_box .popular_tovar_box:nth-child(2n), #main .popular_tovar .wrapper_popular_tovar_box .best_prise_box:nth-child(2n), #main .popular_tovar .wrapper_popular_tovar_box .popular_tovar_box:nth-child(2n), #main .tovar_block .wrapper_best_prise_box .best_prise_box:nth-child(2n) { margin: 0 auto 20px; }
-  #main .best_prise .wrapper_best_prise_box, #main .best_prise .wrapper_popular_tovar_box, #main .popular_tovar .wrapper_best_prise_box, #main .popular_tovar .wrapper_popular_tovar_box, #main .wrapper_guarantee .guarantee .wrapper_guarantee_box, #main .wrapper_payment_tovar .payment_tovar, #main .contacnts .wrapper_contacnts_box .contacnts_box { padding: 0 15px; }
+  #main .best_prise .wrapper_best_prise_box, #main .best_prise .wrapper_popular_tovar_box, #main .popular_tovar .wrapper_best_prise_box, #main .popular_tovar .wrapper_popular_tovar_box, #main .wrapper_guarantee .guarantee .wrapper_guarantee_box, #main .wrapper_payment_tovar .payment_tovar, #main .contacnts .wrapper_contacnts_box .contacnts_box, #main .tovar_block .wrapper_best_prise_box { padding: 0 15px; }
   #main .delivery_tovar, #main .wrapper_about_us .bg { padding: 40px 15px 30px; }
   #main .wrapper_guarantee .guarantee .wrapper_guarantee_box .guarantee_box { width: 100%; margin: 0 0 25px; }
   #main .reviews .wrapper_reviews_box { padding: 0 15px; }
   #main .reviews .wrapper_reviews_box .reviews_box { text-align: center; }
   #main .reviews .wrapper_reviews_box .reviews_box .wrapper_img { float: none; margin: 0 auto 25px; }
-  #main .reviews .wrapper_reviews_box .reviews_box .wrapper_text .wrapper_name_stars .name { display: block; margin: 0 0 25px; } }
+  #main .reviews .wrapper_reviews_box .reviews_box .wrapper_text .wrapper_name_stars .name { display: block; margin: 0 0 25px; }
+  .wrapper_basket .basket { padding: 11px 15px 20px; }
+  .wrapper_basket .basket .number_cost .bascet_icon { width: 34px; margin: 4px 0 0; }
+  .wrapper_basket .basket .number_cost .info_basket { margin: 0 0 0 3%; }
+  .wrapper_basket .basket .wrapper_button button { margin: 0 0 0 5px; }
+  .items #main .tovar_block .filter { max-width: 180px; margin: 35px auto 0; }
+  .items #main .tovar_block .filter .filter_botton:last-child { margin: 0; }
+  .item #main .cart_tovar .wrapper_cart_tovar_description .description .prise_block { padding: 0 0 25px; } }
 
 /*# sourceMappingURL=../maps/responsive.css.map */
