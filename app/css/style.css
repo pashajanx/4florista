@@ -431,7 +431,9 @@ a { text-decoration: none; outline: none; }
 
 #main .wrapper_slider .slider .text .more { display: inline-block; color: #f67076; border: 2px solid #f67076; -webkit-border-radius: 20px; border-radius: 20px; font-size: 14px; padding: 11px 20px; -webkit-transition: all .3s ease; transition: all .3s ease; }
 
-#main .wrapper_slider .slider .text .more:hover { background: #f67076; color: #fff; -webkit-transition: all .3s ease; transition: all .3s ease; }
+#main .wrapper_slider .slider .text .more span { background: #f67076; display: block; margin: 0; }
+
+#main .wrapper_slider .slider .text .more:hover { color: #fff; -webkit-transition: all .3s ease; transition: all .3s ease; }
 
 #main .wrapper_slider .slider .wrapper_img { float: right; position: relative; }
 
