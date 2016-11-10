@@ -28,7 +28,7 @@
   .wrapper_basket .basket .number_cost .info_basket { margin: 10px 0 0 5%; }
   .wrapper_basket .basket .number_cost .info_basket .cost, .wrapper_basket .basket .number_cost .info_basket .total { display: block; }
   .wrapper_basket .basket .wrapper_button { width: 50%; }
-  .wrapper_basket .basket .wrapper_button button, .wrapper_basket .basket .wrapper_button .cancel { max-width: 140px; } }
+  .wrapper_basket .basket .wrapper_button button, .wrapper_basket .basket .wrapper_button .cancel { max-width: 130px; } }
 
 @media only screen and (max-width: 800px) { #header .header_bottom .logo { width: 30%; }
   #header .header_bottom .wrapper_social_search { width: 39%; }
@@ -83,7 +83,7 @@
   .wrapper_basket .basket { padding: 11px 15px 20px; }
   .wrapper_basket .basket .number_cost .bascet_icon { width: 34px; margin: 4px 0 0; }
   .wrapper_basket .basket .number_cost .info_basket { margin: 0 0 0 3%; }
-  .wrapper_basket .basket .wrapper_button button { margin: 0 0 0 5px; }
+  .wrapper_basket .basket .wrapper_button button { margin: 0 0 0 20px; }
   .items #main .tovar_block .filter { max-width: 180px; margin: 35px auto 0; }
   .items #main .tovar_block .filter .filter_botton:last-child { margin: 0; }
   .item #main .cart_tovar .wrapper_cart_tovar_description .description .prise_block { padding: 0 0 25px; } }

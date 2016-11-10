@@ -643,7 +643,7 @@ a { text-decoration: none; outline: none; }
 
 #footer .footer_top .main-mnu_2 { float: left; position: static; margin: 10px 0 0; padding: 0; }
 
-.wrapper_basket { position: absolute; top: 100%; right: 0; left: 0; z-index: 9; width: 100%; background: #fff; -webkit-box-shadow: 0 6px 7px -6px rgba(0, 0, 0, 0.15), 0 6px 7px -6px rgba(0, 0, 0, 0.15) inset; box-shadow: 0 6px 7px -6px rgba(0, 0, 0, 0.15), 0 6px 7px -6px rgba(0, 0, 0, 0.15) inset; }
+.wrapper_basket { display: none; position: absolute; top: 100%; right: 0; left: 0; z-index: 9; width: 100%; background: #fff; -webkit-box-shadow: 0 6px 7px -6px rgba(0, 0, 0, 0.15), 0 6px 7px -6px rgba(0, 0, 0, 0.15) inset; box-shadow: 0 6px 7px -6px rgba(0, 0, 0, 0.15), 0 6px 7px -6px rgba(0, 0, 0, 0.15) inset; }
 
 .wrapper_basket.fixed-style { position: fixed; top: 0; -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
 
